@@ -1,8 +1,5 @@
 name: contribute
-app-dir: app
-hooks:
-  pre-push:
-    - cp ../contribute.json .
+app-dir: legacyredirect
 url:
     - contribute.paas.allizom.org
 framework:
@@ -12,10 +9,6 @@ mem: 128M
 instances: 1
 requirements:
     pypm:
-        - python-memcached
-        - requests
-        - jsonschema
-services:
-    ${name}-memcache: memcached
+       - Flask==0.10.1
 processes:
     web: ./__main__.py

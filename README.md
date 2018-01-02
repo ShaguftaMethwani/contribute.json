@@ -72,7 +72,7 @@ Flask app
 ---------
 
 There's a server-side app that is currently available on
-https://contribute.paas.allizom.org
+https://www.contributejson.org
 
 ## Running the Flask app locally
 
@@ -86,9 +86,6 @@ cd contribute.json
 # using virtualenv wrapper, create a new virtual environment for the project.
 mkvirtualenv contribute.json
 
-# change directory into the flask app directory
-cd app
-
 # intall the requirements
 pip install -r requirements.txt
 
@@ -99,7 +96,7 @@ npm install
 grunt less
 
 # Run the app with
-DEBUG=true python .
+DEBUG=true python app
 
 open http://localhost:5000/
 ```
